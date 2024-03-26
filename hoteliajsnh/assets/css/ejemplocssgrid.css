@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#container-grid{
+    display: grid;
+    grid-template:
+    "header" 100px
+    "navbar" 50px
+    "main" auto
+    "sidebar" 100px
+    "footer" 50px;
+    text-align: center;   
+    height: 100vh; 
+
+}
+header{
+    grid-area: header;
+    background-color: blue;
+}
+nav{
+grid-area: navbar;
+background-color: yellow;
+}
+main{
+    grid-area: main;
+    background-color: green;
+
+}
+aside{
+    grid-area: sidebar;
+    background-color: maroon ;
+}
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
+@media screen and (min-width: 768px){
+    #container-grid{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 50px;
+        grid-template-areas:
+        "header header"
+        "navbar navbar"
+        "sidebar main"
+        "footer footer";
+    }
+}
+@media screen and (min-width: 960px){
+    #container-grid{
+        grid-template-columns: 180px auto 120px;
+        grid-template-rows: 70px auto 70px ;
+        grid-template-areas:
+        "header header header"
+        "navbar main sidebar"
+        "footer footer footer";
+        
+    }
+}
+@media screen and (min-width: 1328px){
+    #container-grid{
+        grid-template-columns: 180px auto;
+        grid-template-rows: 70px auto 70px;
+        grid-template-areas:
+        "header navbar "
+        "main sidebar"
+        "footer footer ";
+        
+    }
+}
+

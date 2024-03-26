@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    font-size: 25px;
+  }
+
+  body {
+    background-size: cover;
+    background-position: bottom;
+    display: grid;
+  }
+
+nav{
+    width: 15%;
+    background-color: rgba(45, 120, 201, 0.7);
+    display: flex;
+    
+}
+.reservas_logo{
+    background: linear-gradient();
+}
+h1{
+    text-align: center;
+    font-family: marcellus;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+.categoria{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.img_usuario{
+    width: 100px;
+    height: 100px;
+}
+.logo_hotelia{
+    width: 10rem;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    max-width: 200px;
+}
